@@ -1,6 +1,8 @@
 package com.example.myapplication;
 
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.fragment.app.FragmentManager;
+import androidx.fragment.app.FragmentTransaction;
 
 import android.content.Intent;
 import android.nfc.Tag;
@@ -20,6 +22,8 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
 
         Button button = (Button) findViewById(R.id.button3);
+
+
         button.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -29,5 +33,12 @@ public class MainActivity extends AppCompatActivity {
             }
         });
     }
+
+   // private void loadFragment(Fragment fragment){
+      //  FragmentManager fa = getSupportFragmentManager();
+      //  FragmentTransaction fragmentTransaction = fa.beginTransaction();
+      //  fragmentTransaction.replace(R.id.framelayout, fragment);
+       // fragmentTransaction.commit();
+   // }
 
 }
