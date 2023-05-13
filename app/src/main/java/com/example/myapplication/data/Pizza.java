@@ -10,43 +10,16 @@ import android.view.ViewGroup;
 
 import com.example.myapplication.R;
 
-public class Pizza extends Fragment {
+public class Pizza {
+    public static String[] pizzaMenu = {
+            "ALL MEAT PIZZA",
+            "CALIFORNIA VEGGIE",
+            "GARLIC CHICKEN"
+    };
 
-    // TODO: Rename parameter arguments, choose names that match
-    // the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
-    private static final String ARG_PARAM1 = "param1";
-    private static final String ARG_PARAM2 = "param2";
-
-    // TODO: Rename and change types of parameters
-    private String mParam1;
-    private String mParam2;
-
-    public Pizza() {
-
-    }
-
-    public static Pizza newInstance(String param1, String param2) {
-        Pizza fragment = new Pizza();
-        Bundle args = new Bundle();
-        args.putString(ARG_PARAM1, param1);
-        args.putString(ARG_PARAM2, param2);
-        fragment.setArguments(args);
-        return fragment;
-    }
-
-    @Override
-    public void onCreate(Bundle savedInstanceState) {
-        super.onCreate(savedInstanceState);
-        if (getArguments() != null) {
-            mParam1 = getArguments().getString(ARG_PARAM1);
-            mParam2 = getArguments().getString(ARG_PARAM2);
-        }
-    }
-
-    @Override
-    public View onCreateView(LayoutInflater inflater, ViewGroup container,
-                             Bundle savedInstanceState) {
-        // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_pizza, container, false);
-    }
+    public static String[] pizzaDetails = {
+            "Premium Crushed Tomato Sauce made of 100% California grown vine ripened tomatoes topped with premium salami, pepperoni, all-natural Italian sausage and seasoned pork.",
+            "Premium crushed tomato sauce, fresh green peppers, fresh red onions, fresh mushrooms, diced Roma tomatoes and fresh spinach—flavored up with our Hut Favorite on the crust edge and a balsamic sauce drizzle. Best on our Thin 'N Crispy crust.",
+            "Creamy garlic Parmesan sauce, grilled chicken, applewood smoked bacon and diced Roma tomatoes—flavored up with toasted Parmesan on the crust edge. Best on our Hand Tossed crust."
+    };
 }
